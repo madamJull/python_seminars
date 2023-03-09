@@ -112,3 +112,4 @@ max_num = 0
 for i in range(n):
     max_num = max(max_num, list_1[i] + list_1[i - 1] + list_1[i + 1])
 print(max_num)
+
