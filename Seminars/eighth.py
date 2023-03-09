@@ -68,27 +68,25 @@ import random
 #     with open('article.txt', 'r', encoding='utf-8') as file:
 #         text = file.read().splitlines()
 #         print(text)
-#         print(type(text))
 #         for line in text[-lines:]:
 #             print(line)
-#             print(type(line))
 # else:
 #     print('lines < 0')
 
 # Требуется реализовать функцию longest_words(file), которая выводит слово, имеющее максимальную длину
 # (или список слов, если таковых несколько).
 
-def longest_words(file):
-    with open(file, 'r', encoding='utf-8') as file_1:
-        text = file_1.read().split()
-        max_word = len(max(text, key=len))
-        text_2 = []
-        for word in text:
-            if len(word) >= max_word:
-                text_2.append(word)
-        print(text_2)
-
-print(longest_words('article.txt'))
+# def longest_words(file):
+#     with open(file, 'r', encoding='utf-8') as file_1:
+#         text = file_1.read().split()
+#         max_word = len(max(text, key=len))
+#         text_2 = []
+#         for word in text:
+#             if len(word) >= max_word:
+#                 text_2.append(word)
+#         print(text_2)
+#
+# print(longest_words('article.txt'))
 
 
 
